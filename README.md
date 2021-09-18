@@ -11,14 +11,10 @@ proper dependency tracking, but the only real limit is your imagination.
 Usage: gosrcs [options] <module dir>
 
 Options:
-  -all
-        Print all source code.
-  -allow-no-module
-        Also print source files that don't have a module (like the stdlib).
   -deps
-        Also print sources of dependencies.
-  -only-go-files
-        Don't print non go sources.
+        Print source paths of dependencies.
+  -module-required
+        Only print source paths with corresponding go modules (ignores the stdlib by default). (default true)
   -pattern string
         Go package pattern to gather sources for. (default ".")
   -relative
