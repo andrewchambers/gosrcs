@@ -54,6 +54,10 @@ func main() {
 		die(err.Error())
 	}
 
+	if packages.PrintErrors(pkgs) != 0 {
+		os.Exit(1)
+	}
+
 	printedModFiles := make(map[string]struct{})
 
 	cwd, err := os.Getwd()
