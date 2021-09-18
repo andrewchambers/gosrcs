@@ -32,8 +32,8 @@ func main() {
 
 	deps := flag.Bool("deps", false, "Print source paths of dependencies.")
 	moduleRequired := flag.Bool("module-required", true, "Only print source paths with corresponding go modules (ignores the stdlib by default).")
-	relative := flag.Bool("relative", false, "Print the source path in relative form.")
-	pattern := flag.String("pattern", ".", "Go package pattern to gather sources for.")
+	relative := flag.Bool("relative", false, "Print source paths relative to the working directory.")
+	pattern := flag.String("pattern", ".", "Go package pattern to gather source paths for.")
 
 	flag.Parse()
 

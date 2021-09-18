@@ -16,9 +16,9 @@ Options:
   -module-required
         Only print source paths with corresponding go modules (ignores the stdlib by default). (default true)
   -pattern string
-        Go package pattern to gather sources for. (default ".")
+        Go package pattern to gather source paths for. (default ".")
   -relative
-        Print the source path in relative form.
+        Print source paths relative to the working directory.
 ```
 
 ## Example
